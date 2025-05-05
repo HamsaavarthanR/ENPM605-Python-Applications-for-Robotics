@@ -1,0 +1,23 @@
+@startuml
+skinparam class {
+    BackgroundColor #ECECFF
+    ArrowColor #9C9C9C
+    BorderColor #AC93E5
+}
+skinparam stereotypeCBackgroundColor DeepSkyBlue
+skinparam classAttributeIconSize 0
+
+class Student {
+    - _name: str
+    - _courses: list<Course>
+    + enroll(course: Course)
+}
+
+class Course {
+    - _title: str
+    - _students: list<Student>
+    + add_student(student: Student)
+}
+
+Student "1..*" -- "1..*" Course : enrolls in
+@enduml

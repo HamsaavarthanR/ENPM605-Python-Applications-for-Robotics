@@ -1,0 +1,23 @@
+@startuml Unidirectional Association
+
+skinparam class {
+    BackgroundColor #ECECFF
+    ArrowColor #9C9C9C
+    BorderColor #AC93E5
+}
+skinparam stereotypeCBackgroundColor DeepSkyBlue
+skinparam classAttributeIconSize 0
+
+
+class Customer {
+    - _name: str
+    - _age: int
+}
+
+class Order {
+    - _customer: Customer
+    - _total: float
+}
+
+Customer "1" <--  Order : references
+@enduml

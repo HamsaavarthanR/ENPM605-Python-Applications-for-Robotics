@@ -1,0 +1,25 @@
+@startuml "Multi-Level Inheritance"
+skinparam class {
+    BackgroundColor #ECECFF
+    ArrowColor #9C9C9C
+    BorderColor #AC93E5
+}
+skinparam stereotypeCBackgroundColor DeepSkyBlue
+skinparam classAttributeIconSize 0
+
+class Animal {
+    +eat()
+    +sleep()
+}
+
+class Mammal {
+    +walk()
+}
+
+class Dog {
+    +bark()
+}
+
+Animal <|-- Mammal
+Mammal <|-- Dog
+@enduml
