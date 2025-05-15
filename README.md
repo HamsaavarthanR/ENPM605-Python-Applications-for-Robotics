@@ -2,7 +2,6 @@
 
 # Source Code for Final Project (Spring 2025)
 
-# enpm605_ros_spring2025_final
 Package for the final project
 
 ## Prerequisites
