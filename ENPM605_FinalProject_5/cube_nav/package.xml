@@ -4,7 +4,7 @@
   <name>cube_nav</name>
   <version>0.0.0</version>
   <description>Final Project -- Team: David, Manoj, Hamsavarathan</description>
-  <maintainer email="manojs@umd.edu">hv</maintainer>
+  <maintainer email="rhamsaa@umd.edu">Hamsaavarthan Ravichandar</maintainer>
   <license>MIT License</license>
 
 <depend>rclpy</depend>
