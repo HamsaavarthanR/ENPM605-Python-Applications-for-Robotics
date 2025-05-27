@@ -47,22 +47,22 @@ ros2 topic echo /aruco_markers
    - Two cubes were placed strategically, each featuring unique ArUco markers for detection and interaction.
    - A Gazebo camera was positioned to monitor Cube #1.
 2. Mapping the Environment
-  - Use slam_toolbox to create a map of the simulated world, ensuring accurate representation of static obstacles and navigation paths.
-  - Store the generated map for later use in navigation tasks.
+   - Use slam_toolbox to create a map of the simulated world, ensuring accurate representation of static obstacles and navigation paths.
+   - Store the generated map for later use in navigation tasks.
 3. Navigating to Marked Cubes
-  - Subscribe to /aruco_markers to detect ArUco marker IDs on cube faces.
-  - Convert marker pose from camera frame to map frame using transformation logic.
-  - Guide the robot to a position opposite the detected marker and prepare for further movement decisions.
+   - Subscribe to /aruco_markers to detect ArUco marker IDs on cube faces.
+   - Convert marker pose from camera frame to map frame using transformation logic.
+   - Guide the robot to a position opposite the detected marker and prepare for further movement decisions.
 4. Waypoint Navigation Using Parameters
-  - Retrieve goal poses from a YAML parameter file, which stores positions, orientations, and navigation behaviors associated with specific marker IDs.
-  - Move the robot to different predefined waypoints, ensuring accurate pose execution and parameter-based control.
+   - Retrieve goal poses from a YAML parameter file, which stores positions, orientations, and navigation behaviors associated with specific marker IDs.
+   - Move the robot to different predefined waypoints, ensuring accurate pose execution and parameter-based control.
 5. Executing Circling Behavior Around Cube #2
-  - Detect the ArUco marker ID on Cube #2 to determine the robot’s final goal.
-  - Compute a circular path around the cube using trajectory planning techniques.
-  - Execute movement around Cube #2 in a clockwise or counterclockwise direction, depending on parameter settings.
+   - Detect the ArUco marker ID on Cube #2 to determine the robot’s final goal.
+   - Compute a circular path around the cube using trajectory planning techniques.
+   - Execute movement around Cube #2 in a clockwise or counterclockwise direction, depending on parameter settings.
 6. Final Navigation Task
-  - Use the detected marker ID to retrieve the robot’s final goal location from the parameter file.
-  - Navigate to the final destination while considering environmental constraints and obstacle avoidance strategies.
+   - Use the detected marker ID to retrieve the robot’s final goal location from the parameter file.
+   - Navigate to the final destination while considering environmental constraints and obstacle avoidance strategies.
 
 
 ## Run Final Project Package
